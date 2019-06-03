@@ -14,9 +14,9 @@ public class Contador {
         this.valor = valor;
     }
 
-    public void incrementa(){
+    public synchronized void  incrementa(){ //synchronized restringe o acesso das threads nesse metodo permitindo apenas uma por vez
         int i = this.valor;
-        i =+ 1;
+        i = i+ 1;
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {

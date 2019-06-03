@@ -14,7 +14,9 @@ public class Fluxo2 implements Runnable{
         public void run() {
 
                 for(int i=0;i<10; i++){
-                    System.err.println("Fazendo uso de interface");
+                    System.err.println(i+"-> F2 : contador= "+ this.count.getValor());
+                    this.count.incrementa();
+                    System.err.println(i+"-> F2 : contador= "+ this.count.getValor());
                         try {
                                 Thread.sleep(r.nextInt(2000)+500);
                         } catch (InterruptedException e) {

@@ -33,7 +33,9 @@ public class Principal {
 //        }
 //        System.err.println("Fim do programa");
         Contador c = new Contador();
-        Fluxo f1 = new Fluxo(c);
-        Fluxo f2 = new Fluxo(c);
+        Fluxo1 f1 = new Fluxo1(c);
+        Fluxo2 f2 = new Fluxo2(c);
+        f1.run();
+        f2.run();
     }
 }
